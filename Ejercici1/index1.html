@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Teclado Seguro Estilo Yape</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+    #container {
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    #keyboard button {
+        width: 60px; 
+        height: 60px; 
+        margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #keyboard button:disabled {
+        background-color: #ccc;
+        cursor: default;
+    }
+    #pin_input {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 180px;
+        padding: 10px;
+    }
+    #status {
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="pin_input" readonly>
+        <button onclick="clearPin()">Borrar</button>
+        <div id="keyboard"></div>
+        <p id="status"></p>
+        <button onclick="submitPin()">Enviar PIN</button>
+    </div>
+<script src="Ejercicio1.js"></script>
+</body>
+</html>
