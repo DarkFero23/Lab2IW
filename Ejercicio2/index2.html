@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="calculator-container">
+    <input type="text" id="display" class="display" readonly>
+    <div id="calculator-buttons" class="calculator-buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="inputValue('(')">(</button>
+        <button onclick="inputValue(')')">)</button>
+        <button onclick="inputValue('/')">/</button>
+        <button onclick="inputValue('7')">7</button>
+        <button onclick="inputValue('8')">8</button>
+        <button onclick="inputValue('9')">9</button>
+        <button onclick="inputValue('*')">*</button>
+        <button onclick="inputValue('4')">4</button>
+        <button onclick="inputValue('5')">5</button>
+        <button onclick="inputValue('6')">6</button>
+        <button onclick="inputValue('-')">-</button>
+        <button onclick="inputValue('1')">1</button>
+        <button onclick="inputValue('2')">2</button>
+        <button onclick="inputValue('3')">3</button>
+        <button onclick="inputValue('+')">+</button>
+        <button onclick="inputValue('0')">0</button>
+        <button onclick="inputValue('.')">.</button>
+        <button onclick="inputValue('%')">mod</button>
+        <button onclick="inputValue('Math.sqrt(')">√</button>
+        <button onclick="inputValue('**2')">x²</button>
+        <button onclick="inputValue('%')">mod</button>
+        <button onclick="inputValue('Math.PI')">π</button>
+        <button onclick="calculate()" class="equals">=</button>
+        <div id="stack-container" class="stack-container"></div>
+
+    </div>
+
+</div>
+
+<script src="Ejercicio2.js"></script>
+</body>
+</html>
